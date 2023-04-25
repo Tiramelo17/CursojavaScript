@@ -1,3 +1,5 @@
+const { b } = require("../node.js/pastaA/exportar")
+
 // estategia 1 para gerar valor padrão
 function soma(a,b ,c) {
     a = a || 1 
@@ -16,11 +18,26 @@ function soma2(a,b,c) {
     return a+b+c
 }
 
-console.log(soma2(),soma2(5),soma2(1,2,3),soma2(0,0,0))
+// console.log(soma2(),soma2(5),soma2(1,2,3),soma2(0,0,0))
 
 //Valor padrão do Es2015
 
 function soma3(a = 1,b=1,c=1) {
     return a+b+c
 }
-console.log(soma3(),soma3(5),soma3(1,2,3),soma3(0,0,0))
+ //console.log(soma3(),soma3(5),soma3(1,2,3),soma3(0,0,0))
+
+
+function somandodiferente2(a,b){
+    return a + b
+}
+
+function somandodiferente3(a,b,c){
+    return somandodiferente2(a,b) + c
+}
+
+function somandodiferente4(a,b,c,d){
+    return somandodiferente3(a,b,c)+d
+}
+console.log('Exemplo Gabriel')
+console.log(somandodiferente4(1,2,3,4))

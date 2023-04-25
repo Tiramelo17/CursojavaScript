@@ -23,3 +23,31 @@ ola1 = () => 'Ola'
 
 console.log(ola())
 console.log(ola1())
+
+function somar(a){
+    if(a === undefined || a === null){
+        console.log('Erro '+ a)
+        throw BaseException
+    } 
+    else{
+    return a + 12108003;
+    }
+}
+
+console.log('Teste: '+somar(5))
+
+function retornarMenor(val1,val2){
+    if(val1<val2){
+        return val1
+    } if(val2<val1){
+        return val2
+    } else {
+        return undefined
+    }
+}
+
+console.log('Qual menor valor entre: '+ retornarMenor(12,12))
+
+
+var x = 5 + "t"
+console.log(x)
